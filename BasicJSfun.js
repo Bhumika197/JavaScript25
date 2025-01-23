@@ -19,31 +19,57 @@
 // }
 // console.log("sum:", s)
 
-// let student={
-//     rollNo: 11,
-//     name: "Naman",
-//     age:13, 
+let student={
+    rollNo: 11,
+    name: "Naman",
+    age:13, 
+
 //     display:function()
 //     {
 //         return this.rollNo +" "+this.name + " " + this.age
 //     }
 
-// }
+}
 // console.log(student.display())
 
 
 //Class and object creation to invoke its method 
-class Student{
-constructor(rollno,name,t1,t2){
-    this.rollno=rollno;
-    this.name=name;
-    this.t1=t1;
-    this.t2=t2;
+// class Student{
+// constructor(rollno,name,t1,t2){
+//     this.rollno=rollno;
+//     this.name=name;
+//     this.t1=t1;
+//     this.t2=t2;
 
+// }
+// calcTotal(){
+//     return this.t1+this.t2
+// }
+// }
+// let stud1 = new Student(11, "Ramman", 89,67)
+// console.log(stud1.name)
+
+// var num = [10,30,50]
+// s= 0; 
+// for (let n in num)
+// {
+//     s =s + num[n]
+
+// }
+// console.log(s)
+
+// var nums = [20,30,40]
+// sum = 0;
+// for(let n of nums)
+// {
+//     sum = sum + n
+// }
+// console.log(s)
+
+
+s =""
+for(let key in student)
+{
+    s = s+ student[key] + ""
 }
-calcTotal(){
-    return this.t1+this.t2
-}
-}
-let stud1 = new Student(11, "Ramman", 89,67)
-console.log(stud1.name)
+console.log(s)
